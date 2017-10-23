@@ -11,20 +11,12 @@
 @implementation InsertionSort
 
 + (NSMutableArray *)InsertionSorts: (NSMutableArray*)array {
-    NSUInteger size = array.count;
-    NSLog(@"size = %lu", (unsigned long)size);
-    for (int i = 1; i < size; i++) {
-        NSNumber* key = array[i];
-        int k = i - 1;
-        while ( (k >= 0) && (array[k]>key) ) {
-            NSLog(@"key = %@", key);
-            NSLog(@"array[k] = %@", array[k]);
-            array[k+1] = array[k];
-            k--;
+    for (int i = 1; i < array.count; i++) {
+        for (int j = i; (j > 0) && ([array[j-1] intValue] > [array[j] intValue]); j--) {
+            [array exchangeObjectAtIndex:j withObjectAtIndex:(j - 1)];
         }
-        array[k+1] = key;
     }
-    NSLog(@"%@", array);
+    NSLog(@"결과 : %@", array);
     return array;
 }
 
