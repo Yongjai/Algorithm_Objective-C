@@ -4,3 +4,5 @@
 
 
 * [Insertion Sort](https://github.com/Yongjai/Algorithm_Objective-C/blob/master/InsertionSort/InsertionSort.m)
+
+* [Merge Sort](https://github.com/Yongjai/Algorithm_Objective-C/blob/master/InsertionSort/InsertionSort.m)
