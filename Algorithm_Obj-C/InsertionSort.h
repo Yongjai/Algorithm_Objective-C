@@ -1,8 +1,8 @@
 //
 //  InsertionSort.h
-//  InsertionSort
+//  Algorithm_Obj-C
 //
-//  Created by YongJai on 22/10/2017.
+//  Created by YongJai on 24/10/2017.
 //  Copyright © 2017 YongJai. All rights reserved.
 //
 
